@@ -1,0 +1,235 @@
+{{ 'animate.min.css' | asset_url | stylesheet_tag }}
+{{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+{{ 'style.css' | asset_url | stylesheet_tag }}
+<!-- Navbar -->
+<nav class="nav-home">
+  <button
+    type="button"
+    class="menu-toggle"
+    id="menuToggle"
+    aria-label="Open menu"
+  >
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div class="nav-left">
+    <a href="{{ routes.root_url }}">TISSO VISON</a>
+  </div>
+
+  <div class="nav-center">
+    <p>Find the ideal gift for your loved ones.</p>
+  </div>
+
+  <div class="nav-right">
+    <button type="button" class="choose-gift-btn">
+      CHOOSE GIFT &rarr;
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button
+    type="button"
+    class="mobile-menu-close"
+    id="menuClose"
+    aria-label="Close menu"
+  >
+    <i class="fas fa-times"></i>
+  </button>
+  <a href="#products">Shop</a>
+  <a href="#">About</a>
+</div>
+<div class="mobile-menu-overlay" id="menuOverlay"></div>
+
+<!-- Header -->
+<header>
+  <div class="header-home1"></div>
+</header>
+
+<!-- Gift Guide -->
+<div class="gift-container">
+  <div class="gift-text">
+    <h1>The Gift Guide</h1>
+    <p class="gift-desc-full">
+      Discover Joy: Your Ultimate Holiday Gift Destination.<br />Explore our
+      curated selection and find the perfect gifts to<br />delight your
+      loved ones this holiday season.
+    </p>
+    <p class="gift-desc-short">
+      Discover Joy: Your Ultimate Holiday Gift Destination.
+    </p>
+    <a href="#products" class="shop-btn shop-btn-desktop">SHOP NOW &rarr;</a>
+  </div>
+  <div class="gift-visual">
+    <div class="gift-image">
+      <img src="https://cdn.shopify.com/s/files/1/1026/3199/7808/files/Frame-1_f0cf97e9-ef8a-4cb5-84ae-ee912b335c89.png?v=1783708113
+" alt="Gift Guide Image" loading="lazy" />
+    </div>
+    <a href="#products" class="shop-btn shop-btn-mobile">SHOP NOW &rarr;</a>
+  </div>
+</div>
+
+<div class="promo-banner">
+  <p class="promo-full">
+    SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL
+  </p>
+  <p class="promo-short">SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR</p>
+</div>
+
+<!-- Products Grid -->
+<section class="products-section" id="products">
+  <h2 class="products-title">Tisso vison in the wild</h2>
+  <div class="products-grid">
+    <div class="product-card" data-handle="black-leather-bag">
+      <img src="https://cdn.shopify.com/s/files/1/0873/7842/8199/files/black-bag-over-the-shoulder_925x_4cae5708-5e9e-4e7e-96ec-9649f0c20cd8.jpg?v=1715108758" alt="Black Leather Bag" loading="lazy" />
+      <button
+        type="button"
+        class="add-btn pos-1"
+        aria-label="View Black Leather Bag options"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+
+    <div class="product-card" data-handle="blue-silk-tuxedo">
+      <img src="https://cdn.shopify.com/s/files/1/0873/7842/8199/files/man-adjusts-blue-tuxedo-bowtie_925x_55a49e12-d54b-488e-b7a0-ea4c201eb01f.jpg?v=1715108779" alt="Blue Silk Tuxedo" loading="lazy" />
+      <button
+        type="button"
+        class="add-btn pos-2"
+        aria-label="View Blue Silk Tuxedo options"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+
+    <div class="product-card" data-handle="chequered-red-shirt">
+      <img src="https://cdn.shopify.com/s/files/1/0873/7842/8199/files/red-plaid-shirt_925x_70e9e5a8-8fc5-4d60-9a9a-cc2e0dd57cc9.jpg?v=1715108770" alt="Chequered Red Shirt" loading="lazy" />
+      <button
+        type="button"
+        class="add-btn pos-3"
+        aria-label="View Chequered Red Shirt options"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+
+    <div class="product-card" data-handle="classic-leather-jacket">
+      <img src="https://cdn.shopify.com/s/files/1/0873/7842/8199/files/leather-jacket-and-tea_925x_2490cde1-7e61-4151-9a65-de8a763bc701.jpg?v=1715108746" alt="Classic Leather Jacket" loading="lazy" />
+      <button
+        type="button"
+        class="add-btn pos-4"
+        aria-label="View Classic Leather Jacket options"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+
+    <div class="product-card" data-handle="classic-varsity-top">
+      <img src="https://cdn.shopify.com/s/files/1/0873/7842/8199/files/casual-fashion-woman_925x_56b56608-f207-45c1-b677-bb5aa26c1c7a.jpg?v=1715108733" alt="Classic Varsity Top" loading="lazy" />
+      <button
+        type="button"
+        class="add-btn pos-5"
+        aria-label="View Classic Varsity Top options"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+
+    <div class="product-card" data-handle="dark-denim-top">
+      <img src="https://cdn.shopify.com/s/files/1/0873/7842/8199/files/young-hip-woman-at-carnival_925x_4a1c7841-27c9-4aa1-98ef-f5d77c5cd675.jpg?v=1715108764" alt="Dark Denim Top" loading="lazy" />
+      <button
+        type="button"
+        class="add-btn pos-6"
+        aria-label="View Dark Denim Top options"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Product Options Popup -->
+<div class="product-popup-overlay" id="productPopupOverlay"></div>
+<div
+  class="product-popup"
+  id="productPopup"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="popupTitle"
+>
+  <button
+    type="button"
+    class="popup-close"
+    id="popupClose"
+    aria-label="Close"
+  >
+    <i class="fas fa-times"></i>
+  </button>
+  <h3 id="popupTitle"></h3>
+  <p class="popup-price" id="popupPrice"></p>
+
+  <div class="popup-option">
+    <span class="popup-label">Size</span>
+    <div class="option-btns" id="popupSizes"></div>
+  </div>
+
+  <div class="popup-option">
+    <span class="popup-label">Color</span>
+    <div class="option-btns" id="popupColors"></div>
+  </div>
+
+  <button type="button" class="popup-add-btn" id="popupAddBtn">
+    ADD TO CART <i class="fas fa-arrow-right"></i>
+  </button>
+</div>
+
+<!-- Floating Cart Button -->
+<button
+  type="button"
+  class="floating-cart"
+  id="cartToggle"
+  aria-label="Open shopping cart"
+}
+>
+  <i class="fas fa-shopping-bag"></i>
+  <span class="cart-count" id="cartCount">0</span>
+</button>
+
+<!-- Cart Overlay -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<!-- Cart Sidebar -->
+<aside class="cart-sidebar" id="cartSidebar" aria-label="Shopping cart">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button
+      type="button"
+      class="cart-close"
+      id="cartClose"
+      aria-label="Close cart"
+    >
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty">Your cart is empty</p>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total</span>
+      <span id="cartTotal">$0.00</span>
+    </div>
+    <button type="button" class="checkout-btn" id="checkoutBtn">
+      CHECKOUT
+    </button>
+  </div>
+</aside>
+
+<script src="{{ 'popper.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'bootstrap.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
+{% schema %}
+{
+"name": "My Custom Section", "settings": [], "presets": [{"name": "My Custom Section"}]}
+{% endschema %}
